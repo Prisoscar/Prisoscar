@@ -322,7 +322,7 @@
         background-color: #171717 !important;
       }
 
-      .dark-card p, .dark-card li, .dark-card li p, .dark-card h4{
+      .dark-card p, .dark-card li, .dark-card li p{
         color: #d7d6d6 !important;
       }
 
@@ -343,7 +343,7 @@
         box-shadow: 2px 4px 15px rgba(128, 128, 128, 0.5);
       }
 
-      .clean-look p b, .clean-look li b, .clean-look li h3 {
+      .clean-look p b, .clean-look li b, .clean-look li h3, .clean-look li h4 {
         color: rgba(88, 88, 88, 1) !important;
       }
 
@@ -368,7 +368,7 @@
         box-shadow: 2px 4px 15px rgba(105, 27, 207, 0.4);
       }
 
-      .violet-look p b, .violet-look li b, .violet-look h3 {
+      .violet-look p b, .violet-look li b, .violet-look h3, .violet-look h4 {
         color: rgb(105, 27, 207) !important;
       }
 
@@ -393,7 +393,7 @@
         box-shadow: 2px 4px 15px rgba(255,165,0 , 0.4);
       }
 
-      .gold-look p b, .gold-look li b, .gold-look h3 {
+      .gold-look p b, .gold-look li b, .gold-look h3, .gold-look h4 {
         color: rgba(255,165,0 , 1) !important;
       }
 
@@ -418,7 +418,7 @@
         box-shadow: 2px 4px 15px rgba(236, 0, 140, 0.4);
       }
 
-      .fuchsia-look p b, .fuchsia-look li b, .fuchsia-look h3 {
+      .fuchsia-look p b, .fuchsia-look li b, .fuchsia-look h3, .fuchsia-look h4 {
         color: rgba(236, 0, 140, 1) !important;
       }
 
@@ -443,7 +443,7 @@
         box-shadow: 2px 4px 15px rgba(160, 0, 12, 0.4);
       }
 
-      .red-look p b, .red-look li b, .red-look h3 {
+      .red-look p b, .red-look li b, .red-look h3, .red-look h4 {
         color: rgba(160, 0, 12, 1) !important;
       }
 
@@ -468,7 +468,7 @@
         box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.4);
       }
 
-      .black-look p b, .black-look li b, .black-look h3 {
+      .black-look p b, .black-look li b, .black-look h3, .black-look h4 {
         color: rgba(0, 0, 0, 1) !important;
       }
 
@@ -493,7 +493,7 @@
         border-radius: 0 !important;
       }
 
-      .vintage-look p b, .vintage-look li b, .vintage-look h3 {
+      .vintage-look p b, .vintage-look li b, .vintage-look h3, .vintage-look h4, .vintage-look p, .vintage-look li {
         color: rgba(0, 0, 0, 1) !important;
       }
 
@@ -519,7 +519,7 @@
         box-shadow: 2px 4px 15px rgba(86, 236, 0, 0.4);
       }
 
-      .green-look p b, .green-look li b, .green-look h3 {
+      .green-look p b, .green-look li b, .green-look h3, .green-look h4 {
         color: rgba(86, 236, 0, 1) !important;
       }
 
@@ -611,37 +611,35 @@
 
       <div style="display: flex; width: 100%; margin: 0.6em 0;">
         <div style="width: 25%;">
-        <!--h4 id="contacts-key-1" style="color: black; margin: 0 4em; text-align: right;">Nome:</h4-->
-        <h4 id="contacts-key-1" class="contacts-key" lang-ref="name-key">Nome:</h4>
+        <h4 id="contacts-key-1" class="contacts-key" lang-ref="name-key"></h4>
         </div>
-        <!--h3 id="contacts-value-1" style="color: rgb(105, 27, 207); margin: 0;" class="wide-contacts">Mihail Prisacar</h3-->
-        <h3 id="contacts-value-1" class="wide-contacts contacts-value">Mihail Prisacar</h3>
+        <h3 id="contacts-value-1" class="wide-contacts contacts-value" lang-ref="name-value"></h3>
       </div>
 
       <div style="display: flex; width: 100%; margin: 0.6em 0;" class="narrow-contacts">
         <div style="width: 25%;">
         <h4 id="contacts-key-2" class="contacts-key"></h4>
         </div>
-        <h3 id="contacts-value-2" class="contacts-value">Mihail Prisacar</h3>
+        <h3 id="contacts-value-2" class="contacts-value" lang-ref="name-value"></h3>
       </div>
 
       <div style="display: flex; width: 100%; margin: 0.6em 0;">
         <div style="width: 25%;">
-        <h4 id="contacts-key-3" class="contacts-key">Email:</h4>
+        <h4 id="contacts-key-3" class="contacts-key" lang-ref="email-key"></h4>
         </div>
-        <h3 id="contacts-value-3" class="wide-contacts contacts-value" lang-ref="email-value">m.prisacar@nesea.it</h3>
+        <h3 id="contacts-value-3" class="wide-contacts contacts-value" lang-ref="email-value"></h3>
       </div>
       <div style="display: flex; width: 100%; margin: 0.6em 0;" class="narrow-contacts">
         <div style="width: 25%;">
         <h4 id="contacts-key-4" class="contacts-key"></h4>
         </div>
-        <h3 id="contacts-value-4" class="contacts-value" lang-ref="email-value-1">m.prisacar@nesea.it</h3>
+        <h3 id="contacts-value-4" class="contacts-value" lang-ref="email-value"></h3>
       </div>
       <div style="display: flex; width: 100%; margin: 0.6em 0;">
         <div style="width: 25%;">
-        <h4 id="contacts-key-5" class="contacts-key" lang-ref="address-key">Indirizzo:</h4>
+        <h4 id="contacts-key-5" class="contacts-key" lang-ref="address-key"></h4>
         </div>
-        <h3 id="contacts-value-5"  class="wide-contacts contacts-value", lang-ref="address-value">Italia</h3>
+        <h3 id="contacts-value-5"  class="wide-contacts contacts-value", lang-ref="address-value"></h3>
       </div>
 
 
@@ -649,11 +647,11 @@
         <div style="width: 25%;">
         <h4 id="contacts-key-6" class="contacts-key"></h4>
         </div>
-        <h3 id="contacts-value-6" class="contacts-value" lang-ref="address-value-1">Italia</h3>
+        <h3 id="contacts-value-6" class="contacts-value" lang-ref="address-value"></h3>
       </div>
       <hr id="body-hr-1" class="body-hr">
 
-      <h2 lang-ref="about-me">Qualcosa su di me</h2>
+      <h2 lang-ref="about-me"></h2>
       <div id="about-me-card" class="info-card">
         <p lang-ref="about-me-content"></p>
       </div>
@@ -662,213 +660,93 @@
       <h2 lang-ref="experience"></h2>
       <div id="personal-card" class="info-card">
           <h3 lang-ref="personal-projects"></h3>
+          <!--p style="margin-bottom: 1em;" lang-ref="personal-projects-payoff"></p-->
           <p style="margin: 1em 0;" lang-ref="personal-projects-period"></p>
-            <p style="margin-bottom: 1.7em;" lang-ref="personal-projects-intro-1"></p>
-
-            <ul style="margin-bottom: 1em;" lang-ref="personal-projects-intro-list"></ul>
-
-            <p lang-ref="personal-projects-intro-2"></p>
-            
-            <p style="margin-top: 1em;"></p>
+          <p style="margin-bottom: 1em;" lang-ref="personal-projects-intro-1"></p>
+          <ul style="margin-bottom: 1em;" lang-ref="personal-projects-intro-list"></ul>
+          <p lang-ref="personal-projects-intro-2"></p>            
+          <p style="margin-top: 1em;"></p>
 
           <div class="description" >
             <hr id="card-hr-1" class="card-hr">
             <br>
-              <p>Soluzioni_progetto_euler: il progetto euler è un sito Internet che raccoglie problemi per lo più di tipo matematico particolarmente proni ad essere 
-                risolti mediante l'implementazione di script o programmi. Qui ho imparato l'importanza del <b>ragionamento logico</b> e della 
-                necessità di <b>ottimizzare</b>. Strumenti smart come <b>Intellij</b> grazie ad algoritmi di suggerimento, mi hanno inoltre aiutato molto con l'esplorazione dei vari <b>paradigmi di programmazione</b> 
-                offerti da linguaggi come java, specialmente dalla versione 8 e successive.</p>
+              <p lang-ref="personal-projects-euler-general-description">.</p>
                 <br>
-              <p>
-                I secondi sono vari progetti minori per esplorare sigole tecnologie e funzionalità, dove per lo più ho seguito corsi, tutorial 
-                e ho navigato in mezzo a documentazione ufficiale e risorse offerte dalla comunità di programmatori in giro per il mondo. Skills sviluppate sono per esempio <b>ricerca</b> 
-                e <b>comprensione</b>. I vari progetti includono <b>tecnologie utilizzate in ambiti aziendali</b> 
-                e sono pensati per dare una base da configurare facilmente, <b>riutilizzabile</b> e integrabile in altri progetti.
-              </p>
+              <p lang-ref="personal-projects-various-general-description"></p>
               <br>
-              <p>L'ultimo della lista è un progetto composto da una serie di bot che hanno diverse funzioni. Il progetto è variato molto nel tempo e si adattato alle nuove esigenze e 
-                volontà che sono apparse mano a mano durante tutte le fasi di sviluppo. In questo caso le competenze acquisite sono veramente molteplici, 
-                dato che si tratta di un progetto seguito in tutte le fasi, a partire dalla fase di <b>analisi</b> e <b>raccolta delle idee</b>, passando per la scelta e creazione 
-                dell'<b>architetura</b>, la <b>gestione dei fallimenti</b> dovuta inevitabilmente nell'incorrere prima o poi in una scelta sbagliata, la gestione di esigenze che hanno 
-                portato a <b>cambiamenti a sviluppo già iniziato</b>, il <b>continuo miglioramento</b> del codice mano a mano che le competenze aumentavano, passando ancora 
-                all'affrontare le difficoltà di un passaggio delicato e fondamentale come la <b>messa in produzione</b>, arrivando infine alla fase di <b>manutenzione</b> 
-                nella quale si monitora il funzionamento l'insorgenza e successiva <b>correzione dei bug</b>. Il progetto è in produzione da fine Marzo 2022 circa e sempre mantenuto e migliorato 
-                ad intermittenza da allora. Per realizzare tutto è sicuramente servita una <b>visione a 360°</b> e la <b>capacità di affrontare problemi inaspettati</b>, il tutto tenendo anche conto di  
-                <b>limitazioni imposte dal budget</b>.<br><br>I bot sono:</p>
-                <ul>
-                  <li>Uno che periodicamente si collegava ad un sito internet e faceva delle cose in maniera automatizzata, attualmente dismesso perché non più necessario.</li>
-                  <li>Uno che raccoglie dati e restituisce report generati dinamicamente in base ai dati presenti nel db e alle richieste dell'utente, progetto fatto un po' per <b>gioco</b>, 
-                    un po' per aumentare competenze, e un po' nella speranza che avesse ricadute positive oltre la semplice creazione.
-                  </li>
-                  <li>Uno che funziona come una specie di gateway che raccoglie e smista le richieste ai vari servizi, tramite questo bot è possibile ottenere informazioni sulla macchina 
-                    ospitante e fare configurazioni su tutto il sistema.
-                  </li>
-                </ul>
+              <p lang-ref="personal-projects-bots-general-description"></p>
+                <ul lang-ref="personal-projects-bots-general-description-list"></ul>
             </div>
-          <button onclick="showDescription(event)" class="general">+ Info Generali</button>
-          <div class="description tecnical-content" >
+          <button onclick="showDescription(event)" class="general" lang-ref="plus-general-info"></button>
+          <div class="description" >
             <hr id="card-hr-2" class="card-hr">
             <br>
-            <p>Soluzioni_project_euler è stato uno tra i miei primi progetti in assoluto, di suo ha una struttura molto semplice, è basato su <b>maven</b>, come la maggior 
-            parte dei progetti java da me fatti. Mi ha aiutato a capire come funziona un progetto java e la gestione delle <b>dipendenze</b>. Mi è servito a mettermi a mio agio inoltre 
-          con il <b>paradigma funzionale</b> introdotto da <b>java 8</b> con le <b>Stream API</b>.</p>
-          <br>
-            <p>Per gli altri vari progetti quando parlo di framework e tecnologie, sto parlando di cose come sistemi di messaggistica (<b>Mosquitto mqtt, activeMQ, kafka</b>), altri Framework (<b>Vaadin</b>), 
-              e altre singole tecnologie e/o librerie (<b>Spring Security, Mongo ed Elasticsearch e altro</b>) ... 
-              In questo caso sono dei progetti pensati per essere facilmente integrati in altri progetti per sfruttare il concetto di <b>riutilizzo</b> di codice  
-              introdotto con il <b>paradigma ad oggetti</b>. 
-            </p>
+            <p lang-ref="personal-projects-euler-technical-description"></p>
             <br>
-            <p>
-              Il progetto dei bot è nato con il seguente motto:<br>Il budget è 0, ma siccome mi prudono le mani qualcosa lo devo fare!<br>
-          Ho cercato di seguire la via più facile ed economica per trasformare in realtà i miei piani, e la soluzione che alla fine ho deciso di adottare è stata 
-          proprio quella di creare dei bot da usare a mo' di <b>CLI</b> per dare ordini precodificati al server, il bot gira su <b>telegram</b>. Il <b>server</b> che avrebbe hostato 
-          i bot ho deciso che sarebbe stato mio vecchio smarthphone android che non usavo più.<br>Il primo bot ad andare in produzione è stato quello che eseguiva azioni automatizzate  
-          sul web, basato su java 11 (Maven), si connetteva al sito tramite browser interno al progetto (<b>htmlUnit</b>), e eseguiva azioni in maniera automatica. Mi avvisava poi dell'esito tramite un messaggio. In 
-          questo progetto ho avuto modo di miglirare le mie abilità in termini di <b>programmazione asincrona</b>, approfondendo i concetti e le librerie associate (<b>Threads</b> 
-          ed <b>Executors</b>). Ho inoltre usato <b>logBack</b> per la gestione dei log.<br>Il secondo bot (Maggio 22) è uno che uso per inserire dati e ritorna dei report in base ai dati inseriti, 
-          il progetto è basato su Java 17 e <b>Springboot 3</b>, usa un 
-          <b>database relazionato (H2)</b> che si connette al progetto tramite <b>JPA</b> e <b>Hibernate</b>. Appena entrato in produzione ho modificato il primo bot che ora 
-          è diventato una specie di master che creava e uccideva i processi sul server in base alle richieste, dato il modesto hardware del telefono non era possibile far girare 
-          tutti i servizi simultaneamente (la RAM si saturava). Nell'estate del 22 ho avuto modo di esplorare concetti come i principi <b>SOLID</b> e i <b>test automatizzati</b>, 
-          da li insieme alla dismissione del primo bot ho deciso di rivedere tutta l'architettura del progetto per renderlo più 'SOLID'. Qui ho creato un terzo bot che sarebbe 
-          servito da nuovo master per gestire tutti gli altri eventuali bot, il tutto su una architettura a microservizi (riadatta alle mie esigenze hardware). In questo caso il nuovo master agisce da gateway che smista 
-          le richieste in base alle esigenze. Il progetto è Java 17 con Maven, la comunicazione con gli altri servizi avviene tramite chiamate <b>http</b>. L'architettura 
-          del secondo bot è ora di tipo <b>REST</b>.<br>Durante tutto questo periodo  ho manutenuto 
-          il progetto correggendo bug e facendo piccole modifiche per migliorare il tutto.<br>Tutti i progetti li ho gestiti usando <b>git</b>.
-              </p>
+            <p lang-ref="personal-projects-various-technical-description"></p>
+            <br>
+            <p lang-ref="personal-projects-bots-technical-description"></p>
           </div>
-        <button onclick="showDescription(event)" class="tecnical">+ Info Tecniche</button>
+        <button onclick="showDescription(event)" class="technical" lang-ref="plus-technical-info"></button>
             
         </div>
           <div id="experience-card-1" class="info-card">
-            <h3>Framework and Application Platform Specialist</h3>
-            <h4>NESEA</h4>
-            <p style="margin-bottom: 1em;">Ottobre 2022 - in corso</p>
-            <p style="margin-bottom: 1.7em;">Esperienza sviluppata sia su progetti interni sia in fase di formazione attiva.</p>
-            <div >
-              <p>L'esperienza con NESEA anche se ancora breve mi ha dato modo di lavorare sia su un progetto gestito internamente sia di espandere le mie conoscenze affrontando in 
-                maniera struturata cose come l'architettura a microservizi.
-              </p>
-              <br>
-            </div>
-          <div class="description tecnical-content" >
+            <h3 lang-ref="nesea-experience"></h3>
+            <h4 lang-ref="nesea-company-name"></h4>
+            <p style="margin-bottom: 1em;" lang-ref="nesea-experience-payoff"></p>
+            <p style="margin-bottom: 1em;" lang-ref="nesea-experience-period"></p>
+            <p lang-ref="nesea-experience-intro"></p>
+            <br>
+          <div class="description" >
             <hr id="card-hr-3" class="card-hr">
-            <p>La prima parte dell'esperienza all'interno di NESEA l'ho passata allocato su un progetto gestito internamente, l'esperienza è stata breve perché il progetto è entrato in fase 
-              di riorganizzazione subito dopo il mio ingresso, la parte seguente l'ho passata in modalità di formazione attiva seguendo sia materiale fornito dall'azienda sia avendo libertà di 
-              <b>gestire personalmente il mio percorso di crescita</b>.</p>
+            <p lang-ref="nesea-experience-general-description"></p>
             <br>
           </div>      
-          <button onclick="showDescription(event)" class="general">+ Info Generali</button>
-        <div class="description tecnical-content">
+          <button onclick="showDescription(event)" class="general" lang-ref="plus-general-info"></button>
+        <div class="description">
           <hr id="card-hr-4" class="card-hr">
 
-            <p>
-              Per quanto riguarda il progetto sopra citato era uno basato su java 8 L'architettura era <b>multi modulo / microservizi</b>, la mia area di competenza ricadeva solo su uno di essi, la 
-              maggior parte del tempo l'ho passato supportato da colleghi allocati da più tempo di me e venivo supportato nei punti dove bisognava interfacciarsi agli altri moduli, come 
-              quello adibito a fare query sul Database (Mongo). La issue principale tra quelle che ho affrontato in modo autonomo riguardava la <b>creazione di file</b> partendo da dati provenienti dal db.
-            </p><br>
-            <p>Per la parte della formazione la parte principale è ruotata intorno alla architettura a microservizi, nell'ambito del corso ho creato un progetto fatto da un <b>api gateway</b> 
-            (con <b>resilience4j</b>) e 2 microservizi con i rispettivi db e rispettive comunicazioni interne, il progetto è molto di base, ma contiene tutte le logiche che servono al funzionamento di ogni aspetto. Tra gli altri argomenti cito le <b>websocket</b> e <b>kafka</b>.</p>
+            <p lang-ref="nesea-experience-technical-description"></p>
         </div>
-        <button onclick="showDescription(event)" class="tecnical">+ Info Tecniche</button>
+        <button onclick="showDescription(event)" class="technical" lang-ref="plus-technical-info"></button>
       </div>
 
       <div id="experience-card-2" class="info-card">
-        <h3>Software Developer</h3>
-        <h4>GM</h4>
-        <p style="margin-bottom: 1em;">Febbraio 2022 - Luglio 2022</p>
-        <p style="margin-bottom: 1.7em;">Periodo passato allocato in un progetto in consulenza.</p>
-        <div class="description" >
+        <h3 lang-ref="gm-experience"></h3>
+        <h4 lang-ref="gm-company-name"></h4>
+        <p style="margin-bottom: 1em;" lang-ref="gm-experience-period"></p>
+        <p lang-ref="gm-experience-intro"></p>
+        <!--div class="description" >
           <hr id="card-hr-5" class="card-hr">
-          <p>Il progetto era basato su una serie di servizi molto simili tra di loro nel modo di essere implementati. In questa esperienza mi ocupavo, sotto la supervisione di una risorsa senior, di creare il backend 
-            dei progetti a me assegnati. Lo sviluppo era standardizzato e i vari progetti erano molto simili tra loro, rendendomi così in grado di gestire tutti gli 
-            strati delle app in autonomia, dall'ingresso tramite il Controller, fino alla comunicazione con il db. 
-          Parte dei task a me assgnati erano di tipo creazione di servizi di crud, e, data la semplicità di task ho avuto modo di creare in autonomia algoritmi che creavano 
-          in <b>maniera automatica</b> tutto il codice adibito alle operazioni basilari di interfacciamento al database, <b>aumentando</b> così la <b>produttività e la 
-            velocità di sviluppo</b>.</p>
+          <p lang-ref="gm-experience-general-description"></p>
           <br>
         </div>
-        <button onclick="showDescription(event)" class="general">+ Info Generali</button>
-        <div class="description tecnical-content" >
+        <button onclick="showDescription(event)" class="general" lang-ref="plus-general-info"></button>
+        <div class="description" >
           <hr id="card-hr-6" class="card-hr">
         
-          <p>Tutti i progetti su cui sono stato allocato erano sviluppati in java 11, <b>Springboot 2</b>, Spring security e <b>iBatis</b> per la connessione al database di tipo <b>Oracle</b>. 
-            Come accennato sopra mi veniva dato un archetipo di base comprendente una configurazione di base con il layer di sicurezza e alcuni componenti standardizzati, per il resto 
-            gestivo tutto autonomamente con momenti di supervisione e confronto con la figura senior che mi gestiva. I progetti erano tutti con <b>architettura REST</b> e in tutti i progetti nel momento 
-            dello start i relativi database erano già popolati con le tabelle che avrei dovuto integrare nel progetto, Io dunque creavo le <b>@Entity</b>, i <b>@RestController</b>, i <b>@Service</b>, 
-            i <b>mapper per interfacciarsi agli xml</b> e gli <b>xml contenenti le query</b> che venivano fatte sul db, il db invece non era sotto la mia gestione. Molti task richiedevano la 
-            creazione di servizi di crud, dopo le prime implementazioni, per via della ripetitività di questo tipo di tasks e la facilità di incorrere in errori di battitura non visti dal compilatore, 
-            ho deciso di creare un progetto che creava tutto il codice necessario in maniera automatizzata. Il progetto, sempre in java, si connetteva al db estraeva i nomi di tutte le tabelle poi 
-            di tutti i campi e creava tutti i componenti in maniera procedurale e <b>senza errori di battitura</b> abbattendo considerevolmente i tempi di sviluppo. Oltre ai componenti in Java, 
-            l'ultima versione creava anche il <b>json</b> che poteva essere importato in <b>postman</b> (strumento usato dal team) per eseguire i test manuali, l'unico momento manuale era proprio 
-            questo dei test dove scrivevo a mano i body delle requests.
-          </p><br>
-          <p>Oltre al fatto delle crud implementavo anche funzionalità specifiche incluse nei file contenenti le specifiche dei vari progetti, queste specifiche nella maggior parte 
-            dei casi si trattava di fare delle query più elaborate al database e sviluppare alcuni servizi più avanzati per funzionalità specifiche, tra i vari per esempio la creazione di file zip o excel.
-          </p>
+          <p lang-ref="gm-experience-technical-description"></p>
           <br>
         </div>
-        <button onclick="showDescription(event)" class="tecnical">+ Info Tecniche</button>
+        <button onclick="showDescription(event)" class="technical" lang-ref="plus-technical-info"></button-->
             
       </div>
 
       <div id="experience-card-3" class="info-card">
-        <h3>Software Developer</h3>
-        <h4>GM</h4>
-        <p style="margin-bottom: 1em;">Maggio 2021 - Dicembre 2021</p>
-        <p style="margin-bottom: 1.7em;">Periodo passato allocato internamente all'azienda.</p>
-        <div class="description" >
-          <hr id="card-hr-7" class="card-hr">
-          <p>In questo periodo ho sia speso tempo in formazione che nella creazione di progetti.
-            L'approccio allo sviluppo della persona in questa fase è stato vincente e cucito su misura per me, sul concetto DIY. 
-            Il tutto si basava sul lasciarmi <b>svolgere i compiti in autonomia</b> dandomi supporto solo se veramente necessario o se richiesto da me. Questo approccio credo mi abbia spinto verso 
-            un processo di <b>responsabilizzazione</b>. L'essere inserito in un team <b>sinceramente appassionato</b> anche ha avuto un effetto molto positivo sulla mia formazione iniziale.
-            </p>
-          <br>
-        </div>
-        <button onclick="showDescription(event)" class="general">+ Info Generali</button>
-        <div class="description tecnical-content" >
+        <h3 lang-ref="gm-intern"></h3>
+        <h4 lang-ref="gm-company-name"></h4>
+        <p style="margin-bottom: 1em;" lang-ref="gm-intern-period"></p>
+        <p style="margin-bottom: 1.7em;" lang-ref="gm-intern-intro"></p>
+
+        <div class="description">
           <hr id="card-hr-8" class="card-hr">
         
-          <p>Durante questa fase ho lavorato sia su progetti aventi solo scopo didattico, sia su prove tecniche e dimostrazioni richieste dall'azienda, sia su codice effettivamente consegnato a clienti. 
-            Di seguito una lista dei molti argomenti e tecnologie usati, partendo dai vari aspetti legati al linguaggio <b>java</b>, al framework <b>Spring boot</b> e <b>Vaadin</b>,
-            passando per <b>Angular</b> e sperimentazioni su Android. Ancora <b>Mongo</b>, <b>Elasticsearch</b> e <b>database relazionati</b>, <b>ELK stack</b> e altre tecnologie legate a quelle 
-            nominate fino ad ora. Anche se alcune di queste cose sono state fatte superficialmente, mi hanno aiutato a creare un <b>metodo per affrontare le sfide</b> in maniera da arrivare
-            ai risultati prefissati.<br>Per citare alcuni progetti:
-          </p>
-          <ul>
-            <li>
-              Un progetto Angular 12. Il progetto in ambito turismo è stato creato usando come base una altro progetto creato internamente simile. Il mio compito, seguito da una riosorsa senior, è stato quello 
-              di sviluppare il frontend prendendo in carico ogni aspetto di questo, dallo sviluppo dei componenti passando per il routing e le chiamate al BE fino allo sviluppo dei vari servizi. Il progetto è stato creato usando 
-              <b>Angular 12</b> con framework <b>Ioniq pwa</b>.
-            </li>
-            <li>
-              Un progetto Android puro basato su realtà aumentata usando la libreria di google <b>ArCore</b>. Il progetto è sostanzialmente morto subito a causa di una serie di problematiche tra cui l'intenzione 
-              di integrare logiche baste su coordinate gps e la mancanza di expertise all'internio del team sulle tecnologie e metodologie usate.
-            </li>
-            <li>Una Poc per espolare la possibilità di creare internamente un nuovo prodotto. Il mio compito è stato quello di sviluppare il componente principale che andasse ad espletare 
-              la funzionalità primaria del progetto. Per sviluppare questo componente tra le altre cose ho dovuto eseguire delle chiamate a delle API esterne e gestirne la comuinicazione tra i due sotto ogni aspetto. 
-              <br>Le tecnologie usate erano <b>Java 11, Springboot 2, Vaadin 21 e MongoDB</b>.
-            </li>
-            <li>Una <b>immagine docker</b> contenete un server <b>Logstash</b> configurato interamente da me, la configurazione gestiva 3 pipeline in ingresso (gestiva chiamate http e topic e queue gestiti da <b>ActiveMq</b>). 
-            In uscita invece spediva tutto a un server Elasticsearch, sempre hostato con docker.
-            </li>
-            <li>Un servizio esterno collegato ad un grande progetto ambito agroalimntare. Il servizo basato su Java 11, Springboot 2 e Vaadin, dava una interfaccia dove era possibile gestire dei sensori simulati che generavano 
-              dei valori crerati randomicamente o davano la possibilità di inserire dati manualmente, i dati dei "sensori" venivano spediti su un topic ActiveMq, sia in maniera schedulata (ad esempio ogni minuto 
-              venivano inviati dati ambientali come temperatura, pressione ecc...) sia dati spediti una volta una tantum (ad esempio pesature effettuate manualmente da operatori umani). L'interfaccia per gestire il tutto 
-              come accenato prima è stata fatta usando Vaadin 21.
-            </li>
-          </ul>
+          <p lang-ref="gm-intern-technical-description-par-1"></p>
+          <ul lang-ref="gm-intern-technical-description-list"></ul>
           <br>
-          <p>
-            Il punto che più rimarcherei non è l'utilizzo di un ventaglio così ampio di tecnologie, dato che molte delle cose fatte sono inevitabilmente andate nel dimenticatoio, ma l'approccio di per se 
-            basato sull'esplorazione, la curiosità e in generale sul mettersi in gioco insieme alla spinta di andare a usare una metodologia basata su <b>best practiceces</b>. Spesso e volentieri sono stato introdotto 
-            all'utilizzo di strumenti come i resolver in angular per evitare comportamenti sgradevoli durante la visualizzazione dei dati nelle varie pagine, o l'uso di strumenti come jsonDB o H2 per poter 
-            sviluppare anche in assenza di parti del progetto come il db o il backend e altre best practice per arrivare ad un risultato ottimale, e altro...
-          </p>
+          <p lang-ref="gm-intern-technical-description-par-2"></p>
         </div>
-        <button onclick="showDescription(event)" class="tecnical">+ Info Tecniche</button>
+        <button onclick="showDescription(event)" class="technical" lang-ref="plus-technical-info"></button>
             
       </div>
 
@@ -899,9 +777,14 @@
         let description = button.previousElementSibling;
         description.style.transitionDuration = description.scrollHeight / scrollingSpeed + "s";
         description.style.maxHeight = description.scrollHeight + "px";
-        if (button.classList.contains("general")) button.innerText = "- Info Generali"
-        if (button.classList.contains("tecnical")) button.innerText = "- Info Tecniche"
-        //button.innerText = "Hide";
+        if (button.classList.contains("general")) {
+          button.setAttribute('lang-ref', 'minus-general-info');
+          button.innerHTML  = languageMap[button.getAttribute('lang-ref')][language];
+        }
+        if (button.classList.contains("technical")) {
+          button.setAttribute('lang-ref', 'minus-technical-info');
+          button.innerHTML  = languageMap[button.getAttribute('lang-ref')][language];
+        }
         button.onclick = hideDescription;
       }
 
@@ -910,9 +793,14 @@
         let description = button.previousElementSibling;
         description.style.transitionDuration = description.scrollHeight / scrollingSpeed + "s";
         description.style.maxHeight = "0";
-        if (button.classList.contains("general")) button.innerText = "+ Info Generali"
-        if (button.classList.contains("tecnical")) button.innerText = "+ Info Tecniche"
-        //button.innerText = "Show More";
+        if (button.classList.contains("general")) {
+          button.setAttribute('lang-ref', 'plus-general-info');
+          button.innerHTML  = languageMap[button.getAttribute('lang-ref')][language];
+        }
+        if (button.classList.contains("technical")) {
+          button.setAttribute('lang-ref', 'plus-technical-info');
+          button.innerHTML  = languageMap[button.getAttribute('lang-ref')][language];
+        }
         button.onclick = showDescription;
       }
 
@@ -926,7 +814,6 @@
         console.log(inputValue < 550)
 
         if (inputValue == "") {
-          console.log("not number")
           showToast("Invalid input!");
         } else {
           if(inputValue < 50 || inputValue > 1000) showToast("Choose between 50 and 1000.");
@@ -958,7 +845,6 @@
         if(headerVisibility == "hidden") return;
         var mainMenu = document.getElementById("under-header");
         mainMenu.style.maxHeight = headerRealHeight + "px";
-
       }
 
       window.onload = function () {
@@ -1068,9 +954,9 @@
       }
 
       function initializePage(){
-        scrollingSpeed = 150;
-        language = "english";
-        theme = "nesea";
+        scrollingSpeed = 245;
+        language = "italian";
+        theme = "html-1";
         headerVisibility = 'hidden';
 
         //initialize elements
@@ -1232,11 +1118,15 @@
           [ita]:'Nome:',
           [eng]:'Name:'
         },
-        'email-value':{
-          [ita]:'m.prisacar@nesea.it',
-          [eng]:'m.prisacar@nesea.it'
+        'name-value':{
+          [ita]:'Mihail Prisacar',
+          [eng]:'Mihail Prisacar'
         },
-        'email-value-1':{
+        'email-key':{
+          [ita]:'Email:',
+          [eng]:'Email:'
+        },
+        'email-value':{
           [ita]:'m.prisacar@nesea.it',
           [eng]:'m.prisacar@nesea.it'
         },
@@ -1245,10 +1135,6 @@
           [eng]:'Address:'
         },
         'address-value':{
-          [ita]:'Italia',
-          [eng]:'Italy'
-        },
-        'address-value-1':{
           [ita]:'Italia',
           [eng]:'Italy'
         },
@@ -1295,19 +1181,330 @@
           [eng]: 'In the personal projects section, I want to mention following project that had different roles in my professional growth:'
         },
         'personal-projects-intro-list':{
-          [ita]: `<li>Soluzioni_project_euler</li>
-              <li>Vari progetti minori che imlementano framework e tecnologie usati nel mondo enterprise</li>
-              <li>Una serie di bot organizzati a microservizi che espletano varie funzioni, attualmente in produzione</li>`,
-          [eng]: `<li>Soluzioni_project_euler</li>
-              <li>Vari progetti minori che imlementano framework e tecnologie usati nel mondo enterprise</li>
-              <li>Una serie di bot organizzati a microservizi che espletano varie funzioni, attualmente in produzione</li>`
+          [ita]: `<li>Soluzioni project euler</li>
+              <li>Progetti minori per imparare a implementare tecnologie usate nel mondo enterprise</li>
+              <li>Una serie di bot organizzati a microservizi con varie funzioni</li>`,
+          [eng]: `<li>Project euler solutions</li>
+              <li>Minor projects for learning implementatition of various enterprise technologies</li>
+              <li>A series of bots organized in microservices with various functions</li>`
         },
         'personal-projects-intro-2':{
           [ita]: `Ho deciso di mettere in primo piano la sezione dei progetti personali per rimarcare l'importanza della <b>sperimentazione</b> e del mettersi alla 
               prova in diverse aree, anche al di fuori di quelle stabilite dall'azienda o dal proprio ruolo. Inoltre la sezione dei progetti personali rappresenta 
-              per me l'opportunità di mostrare la mia <b>versatilità</b> e il mio <b>impegno</b> nel <b>continuo miglioramento</b>.`,
+              per me l'opportunità di mostrare la mia <b>versatilità</b> e il mio <b>impegno</b> nel <b>continuo miglioramento</b>.<br><br>Tutti i miei progetti 
+              sono presenti sul mio <a href="https://www.github.com/Prisoscar" target="_blank">profilo github</a> sia in repository pubblici che privati.`,
           [eng]: `I have decided to prioritize the section on personal projects to emphasize the importance of <b>experimentation</b> and challenging oneself in 
-              various areas, even beyond those established by the company role. Additionally, the section on personal projects provides me with an opportunity to showcase my <b>versatility</b> and <b>commitment</b> to <b>continuous improvement</b>.`
+              various areas, even beyond those established by the company role. Additionally, the section on personal projects provides me with an opportunity to showcase my <b>versatility</b> and <b>commitment</b> to <b>continuous improvement</b>.<br><br>All my projects are located on my 
+              <a href="https://www.github.com/Prisoscar" target="_blank">github profile</a>, both in public and private repositories.`
+        },
+        'personal-projects-euler-general-description':{
+          [ita]: `Soluzioni progetto euler: il progetto euler è un sito Internet che raccoglie problemi per lo più di tipo matematico particolarmente proni ad essere 
+              risolti mediante l'implementazione di script o programmi. Risolvendo alcuni dei problemi da loro proposti ho comiciato effettivamente a 
+              mettere in pratica le competenze in ambito di programmazione che avevo acquisito fino ad allora. Facendo ciò ho imparato l'importanza del <b>ragionamento logico</b>, esistenza di varie <b>Strutture dati</b> e dei vari <b>paradigmi di programmazione</b> usati nel mondo java.`,
+          [eng]: `Project euler solutions: the Euler Project is a website that collects mostly mathematical problems that are particularly suitable for being 
+              solved through the implementation of scripts or programs. By solving some of the problems they propose, I have actually started putting into 
+              practice the programming skills I had acquired up to that point. In doing so, I have learned the importance of <b>logical reasoning</b>, the existence 
+              of various <b>data structures</b>, and the different <b>programming paradigms</b> used in the Java world.`
+        },
+        'personal-projects-various-general-description':{
+          [ita]: `Il passaggio successivo dopo un primo approccio al lingaggio di programmazione è l'imparare ad utilizzare le tecnologie più utilizzate a livello 
+              <b>enterprise</b>. A tale scopo seguendo guide e tutorial, ho costruito una serie di progetti personali nei quali, cercavo di esplorare e implementare 
+              una serie di tecnologie riguardanti vari campi, come quelli della <b>messaggistica</b>, ambito <b>database</b> e altro. Gli obiettivi che ho cercato 
+              raggiungere con questi progetti sono stati principalmente quelli di prendere dimestichezza con l'ambiente e le tecnologie di lavoro, di aumentare 
+              l'<b>autonomia sul lavoro</b> e di imparare a navigare tra risorse presenti online e usando documentazione specifica, nonché quello di creare del 
+              <b>codice riutilizzabile</b> facilmente includibile in altri progetti.`,
+          [eng]: `The next step after an initial approach to programming language is learning to use the most commonly used technologies at the <b>enterprise</b> 
+              level. To achieve this, I followed guides and tutorials and built a series of personal projects. In these projects, I aimed to explore and implement 
+              various technologies in fields such as <b>messaging</b>, <b>database</b> management, and more. The objectives I have tried to achieve with these projects 
+              were primarily to become familiar with the work environment and technologies, increase <b>autonomy in my work</b>, learn to navigate online resources 
+              and use specific documentation, and create easily <b>reusable code</b> that can be incorporated into other projects.`
+        },
+        'personal-projects-bots-general-description':{
+          [ita]: `Arrivato a questo punto l'ultimo passo da compiere è quello di mettere insieme tutte le competenze fin qui maturate e creare un prodotto 
+              completo, da mettere in produzione e mantenere nel tempo per riuscire anche a crearmi uno skill set completo e <b>versatile</b> per affrontare al 
+              meglio ogni tipo di sfida lavorativa. Per fare ciò ho deciso di creare un progetto con una serie di bot che espletano varie funzionalità, e che fosse 
+              possibile usare tramite una chat testuale per far eseguire comandi specifici. Per riuscire a creare tale progetto ho dovuto afforontare varie sfide, 
+              a partire dalla fase di <b>analisi</b> e <b>raccolta delle idee</b>, passando per la scelta dell'<b>architetura</b> e delle tecnologie da usare, la 
+              <b>gestione dei fallimenti</b> dovuta inevitabilmente nell'incorrere prima o poi in una scelta sbagliata, la gestione di cambiamenti in corso d'opera. 
+              Un'altra sfida importante da affrontare è stata la <b>messa in produzione</b> e la fase di <b>manutenzione</b> e successiva <b>correzione dei bug</b>. 
+              Per realizzare tutto è sicuramente servita una <b>visione a 360°</b> e la <b>capacità di affrontare problemi inaspettati</b>, il tutto tenendo anche 
+              conto di limitazioni ed esigenze specifiche.<br><br>Andando nello specifico attualmente il progetto è composto da 2 bot:`,
+          [eng]: `At this point, the final step is to bring together all the skills acquired so far and create a complete product that can be deployed and 
+              maintained over time, allowing me to develop a comprehensive and <b>versatile</b> skill set to tackle any work challenge effectively. To achieve this, 
+              I decided to create a project with a series of bots that perform various functionalities and can be interacted with through a text-based chat to 
+              execute specific commands. To accomplish this project, I had to face various challenges, starting from the <b>analysis</b> and <b>ideation phase</b>, 
+              followed by the selection of <b>architecture</b> and technologies to use, managing failures that inevitably arise from making occasional wrong 
+              choices, and adapting to changes during the development process. Another significant challenge was <b>deploying the project</b>, conducting 
+              <b>maintenance</b>, and making <b>bug fixing</b>. Realizing all this required a <b>comprehensive vision</b> and the ability to <b>tackle unexpected problems</b> while considering specific limitations and requirements.<br><br>To be more specific, the current project consists of 2 bots:`
+        },
+        'personal-projects-bots-general-description-list':{
+          [ita]: `<li>Un 'master bot' che gestisce e monitora il server di produzione e le istanze di eventuali altri bot configurati sul server per 
+              ottimizzare l'uso di risorse del sistema</li>
+              <li>Un bot che raccoglie e persiste dati su un db in base ai comandi che riceve e ritorna i dati inseriti o report che vengono generate in base ai 
+              dati collezionati</li>`,
+          [eng]: `<li>A 'master bot' that manages and monitors the production server and instances of any other bots configured on the server to optimize system 
+              resource utilization.</li>
+              <li>A bot that collects and persists data in a database based on the received commands, and returns the entered data or reports generated based on 
+              the collected data</li>`
+        },
+        'plus-technical-info':{
+          [ita]: '+ Info Tecniche',
+          [eng]: '+ Technical Info'
+        },
+        'minus-technical-info':{
+          [ita]: '- Info Tecniche',
+          [eng]: '- Technical Info'
+        },
+        'plus-general-info':{
+          [ita]: '+ Info Generiche',
+          [eng]: '+ Generic Info'
+        },
+        'minus-general-info':{
+          [ita]: '- Info Generiche',
+          [eng]: '- Generic Info'
+        },
+        'personal-projects-euler-technical-description':{
+          [ita]: `Soluzioni project euler è stato sviluppato con java 11 ed è basato su <b>maven</b>. Oltre ad introdurmi al mondo della programmazione questo 
+              progetto mi ha anche aiutato a capire come funziona un progetto java e la <b>gestione delle dipendenze</b>. Mi è servito a mettermi a mio agio 
+              inoltre con il <b>paradigma funzionale</b> introdotto da <b>java 8</b> con le <b>Stream API</b>.`,
+          [eng]: `Euler Project Solutions was developed using Java 11 and is based on <b>Maven</b>. In addition to introducing me to the world of programming, 
+              this project has also helped me understand how a Java project works and how <b>dependencies are managed</b>. It has also allowed me to become 
+              comfortable with the <b>functional programming paradigm</b> introduced in <b>Java 8</b> with the <b>Stream API</b>.`
+        },
+        'personal-projects-various-technical-description':{
+          [ita]: `Per la sezione progetti vari quello che ho fatto è stato cercare di implementare alcune tecnologie su vari campi, principalmente in un 
+              contesto <b>Spring boot</b> nel quale ho cercato di creare una implementazione con una configurazione di base in modo da essere facilmente 
+              includibile in progetti reali seguendo il riutilizzo introdotto dal <b>paradigma ad oggetti</b>, tra le tecnologie da me studiate cito <b>Mosquitto 
+              mqtt, activeMQ, kafka</b> per la parte di messaggistica, insieme a sperimentazioni su <b>web socket</b>. Mi riferisco anche a prove con altri 
+              Framework come <b>Vaadin</b>, e altre singole tecnologie e/o librerie (<b>Spring Security, Mongo ed Elasticsearch e altro</b>) ed altro. Inoltre 
+              mi sono focalizzato anche su campi come lo sviluppo frontend sperimentando con <b>Angular 12</b> e lo sviluppo di app <b>Android native</b>.`,
+          [eng]: `For the miscellaneous projects section, what I have done is try to implement various technologies in different fields, primarily within a 
+              <b>Spring Boot</b> context. I aimed to create an implementation with a basic configuration that could be easily included in real projects, following 
+              the reusability principles introduced by the <b>object-oriented paradigm</b>. Among the technologies I have studied, I can mention <b>Mosquitto MQTT, 
+              ActiveMQ, and Kafka</b> for messaging purposes, along with experimentation with <b>web sockets</b>. I have also explored other frameworks such as 
+              <b>Vaadin</b>, as well as individual technologies and libraries like <b>Spring Security, MongoDB, Elasticsearch</b>, and others. Additionally, I have 
+              ventured into other fields, including frontend development with <b>Angular 12</b> and <b>native Android</b> app development.`
+        },
+        'personal-projects-bots-technical-description':{
+          [ita]: `Il progetto dei bot è composto come già detto da 2 differenti bot, 
+              entrambi usano <b>java 17</b> ed entrambi riconoscono i comandi che ricevono attraverso un <b>string pattern recognition</b>, in pratica 
+              vedono se c'è un match tra i messaggi ricevuti e una serie d messaggi precodificati nel progetto.<br><br><b>Master bot</b> usa maven e il suo compito è 
+              registrare al suo interno tutti i bot che devono essere messi in produzione sul server in cui è hostato, i comandi diretti a master vengono eseguiti 
+              direttamente, i messaggi diretti verso gli altri bot vengono messi in coda e spediti uno per volta ai vari altri bot tramite delle <b>chiamate REST</b>, 
+              poi spedisce al mittente i messaggi che riceve nelle risposte ricevute dagli altri servizi che gestiscono le logiche specifiche dietro gli altri bot. 
+              L'unico altro bot fino ad ora registrato si occupa di persistere campi specifici su un db e rispondere con i dati salvati o con report basati su tali 
+              dati. Questo bot è costruito usando il framework <b>Spring boot 3</b> e usa un db relazionato (<b>H2 DB</b>) con <JPA + Hibernate</b>. In particolare 
+              nella creazione del secondo bot ho cercato di basare il suo sviluppo su metodologia che segue i principi <b>SOLID</b> che stavo studiando in quel 
+              periodo.`,
+          [eng]: `The project of the bots, consists, as previously mentioned, of two different bots. 
+              Both bots use <b>Java 17</b> and employ a <b>string pattern recognition logic</b> to recognize the commands they receive. Essentially, 
+              they check if there is a match between the received messages and a set of predefined messages within the project.<br><br>The <b>Master bot</b> uses 
+              Maven and its task is to register all the bots that need to be deployed on the hosting server. Direct commands to the Master bot are executed immediately, while messages directed to the other bots are queued and sent one by one to the respective bots through <b>REST calls</b>. The Master 
+              bot then sends the messages received in the responses from the other services that handle the specific logic behind the other bots back to the sender. 
+              So far, only one other bot has been registered, which is responsible for persisting specific fields in a database and responding with the saved data or reports based on that data. This bot is built using the <b>Spring Boot 3</b> framework and uses a relational database (<b>H2 DB</b>) that is accessed by 
+              <JPA + Hibernate</b>. In particular, during the creation of the second bot, I aimed to base its development on a methodology that follows the 
+              <b>SOLID</b> principles, which I was studying at that time.`
+        },
+        'nesea-experience':{
+          [ita]: 'Framework and Application Platform Specialist',
+          [eng]: 'Framework and Application Platform Specialist'
+        },
+        'nesea-company-name':{
+          [ita]: '<b>NESEA</b>',
+          [eng]: '<b>NESEA</b>'
+        },
+        'nesea-experience-payoff':{
+          [ita]: 'Consulenza, progetti interni e formazione attiva.',
+          [eng]: 'Consulting, internal projects, and active training.'
+        },
+        'nesea-experience-period':{
+          [ita]: 'Ottobre 2022 - in corso',
+          [eng]: 'October 2022 - ongoing'
+        },
+        'nesea-experience-intro':{
+          [ita]: `L'esperienza con NESEA mi ha dato modo di lavorare sia come <b>consulente esterno</b> presso clienti rinomati, sia su un <b>progetti 
+              gestiti internamente</b>, Mi ha inoltre dato modo di espandere le mie conoscenze attraverso <b>percorsi strutturati di formazione</b>.`,
+          [eng]: `The experience with NESEA has allowed me to work both as an <b>external consultant</b> for renowned clients and on <b>internally managed 
+              projects</b>. It has also provided me with the opportunity to expand my knowledge through a <b>structured training program</b>.`
+        },
+        'nesea-experience-general-description':{
+          [ita]: `In NESEA ho cominciato il mio percorso all'interno di progetti gestiti internamente. In questo periodo oltre a poter dimostrare le mie capacità 
+              ho anche avuto modo di capire il contesto nel quale mi trovavo e di creare <b>legami con i componenti del team</b>. 
+              Attualmente invece lavoro in consulenza presso un cliente che gestisce commesse da parte di una delle più imporatanti realtà bancarie 
+              nazionali, Intesa San Paolo. Nei periodi tra un'attività e l'altra ho avuto modo di dedicare tempo alla formazione seguendo sia materiale fornito 
+              dall'azienda sia avendo libertà di <b>gestire personalmente il mio percorso di crescita</b>. Oltre ad approfondire tematiche tecniche NESEA ha puntato 
+              molto anche sullo sviluppo di <b>soft skills</b> per uno sviluppo più ampio sia per quanto riguarda la crescita personale che per quanto riguarda 
+              aspetti <b>interpersonali</b>.`,
+          [eng]: `In NESEA I started my journey within internally managed projects. In this period, in addition to being able to demonstrate my skills, I also had 
+              the opportunity to understand the company context and to create <b>bonds with team members</b>. Currently, I work as a consultant for a client 
+              involved in projects for one of the most important national banking institutions, Intesa San Paolo. During the intervals between activities, I have 
+              been able to dedicate time to training, both through materials provided by the company and by having the freedom <b>to personally manage my growth 
+              path</b>. In addition to delving into technical topics, NESEA also focuses heavily on <b>soft skills</b> for a broader development, both in terms of personal growth and <b>interpersonal</b> aspects.`
+        },
+        'nesea-experience-technical-description':{
+          [ita]: `I progetti sui quali sono stato coinvolti internamente sono stati uno in ambito delle fatturazioni elettroniche, nel quale veniva richiesto di 
+              <b>implementare evolutive</b>, il progetto era basato su java 8 con framework spring ed una archittetura multimodulo. Il secondo progetto, in 
+              ambito pubblica amministrazione consisteva nel migrare una parte di un progetto scritto in java 6 in usando gli <b>EJB</b> in due più moderni 
+              microservizi springboot basati su java 8, uno con una interfaccia <b>SOAP</b> e una di tipo <b>REST</b>.
+              <br>
+              Per quanto riguarda la parte in consulenza, ho lavorato su progetti dove Intesa San Paolo rappresenta il cliente committente del software. In 
+              questo caso ho lavorato su due progetti uno in contesto <b>Spring Batch</b> e uno di tipo rest basato su springboot. Per entrambi i progetti 
+              si è usato un framework interno basati sui framework spring sopra citati. Come DB è stato adottato <b>MongoDB</b>. 
+              In particolare per il secondo progetto è stata posta molta importanza 
+              anche sulla qualità del lavoro, era richesto di ottenere certi punteggi minimi certificati da scansioni di <b>SonarQube</b>, il codice è stato 
+              posto a <b>code review</b>, inoltre è stata anche raggiunta una code coverage di oltre il 90% nella parte di test, usando sia forme di <b>unit 
+              testing</b> che di <b>integration testing</b>. Il progetto si è poi concluso con la <b>scrittura di documentazione tecnica</b> usando sempre 
+              template interni, per documentare le rest inoltre veniva usato <b>Swagger</b>.
+              <br>
+              Per la parte di forazione molta enfasi è stata posta sulla <b>architettura a microservizi</b> e su tecnologie specifiche, come ad esempio 
+              <b>Resilience4j</b> per restare in tema.`,
+          [eng]: `The projects I have been involved in internally include one in the field of electronic invoicing, where I was tasked with <b>implementing 
+              software evolutions</b>. The project was based on Java 8 with the Spring framework and a multi-module architecture. The second project, in the 
+              public administration sector, involved migrating a portion of a Java 6 project that used <b>EJBs</b> to two more modern microservices based on 
+              Java 8 and Spring Boot, one with a <b>SOAP</b> interface and the other with a <b>REST</b> interface.
+              <br>
+              Regarding the consultancy work, I have worked on projects where Intesa San Paolo is the client commissioning the software. In that case, I worked on 
+              two projects: one in the context of <b>Spring Batch</b> and another REST-based project using Spring Boot. Both projects utilized an internal 
+              framework based on the mentioned Spring frameworks. It have been adopted <b>MongoDB</b>. 
+              In particular, the second project placed great emphasis on the quality of work. It required 
+              achieving certain minimum scores certified by <b>SonarQube</b> scans, using also <b>code review</b> approach to obtain better results. In this 
+              project I was also able to achieve a code coverage of over 90% in testing, utilizing both <b>unit testing</b> and <b>integration testing</b>. 
+              The project concluded with the <b>creation of technical documentation</b> using internal templates For documenting rest APIs was also used 
+              <b>Swagger</b>.
+              <br>
+              In terms of training, significant emphasis was placed on <b>microservices architecture</b> and specific technologies, such as <b>Resilience4j</b>, 
+              to name one example.`
+        },
+        'gm-experience':{
+          [ita]: 'Software Developer',
+          [eng]: 'Software Developer'
+        },
+        'gm-company-name':{
+          [ita]: '<b>GM</b>',
+          [eng]: '<b>GM</b>'
+        },
+        'gm-experience-period':{
+          [ita]: 'Febbraio 2022 - Luglio 2022',
+          [eng]: 'February 2022 - July 2022'
+        },
+        'gm-experience-intro':{
+          [ita]: `Esperienza con GM passata lavorando come <b>consulente esterno</b> su progetti in ambito di sanità pubblica. Il progetti erano basati su una 
+              serie di servizi implementati usando le stesse tecnologie. Per l'implementazione di questi servizi venivo seguito da una risorsa senior, la quale 
+              mi lasciava molta <b>autonomia</b> facendomi sviluppare tutte le parti richieste dal progetto.
+              <br><br>
+              Tutti i progetti riguardavano solo la parte di <b>Back End</b> venivano sviluppati usando java 11 e <b>Spring Boot 2</b> con interfaccia REST. 
+              Si basavano su DB relazionati di tipo <b>OracleDB</b> e per la gestione delle query veniva usato il framework <b>MyBatis</b>. Internamente per 
+              testare le chiamate veniva usato molto <b>Postman</b>.`,
+          [eng]: `Experience with GM spent working as <b>external consultant</b> on national health system related projects. The projescts consists in several 
+              services developed using standardized technologies. For the implementation of these services I was followed by a senion resource, who gave me 
+              <b>autonomy</b> in implementing all required parts required by project.
+              <br><br>
+              All the projects were focused only on the <b>Back End</b> and were built using java 11 and <b>Spring Boot 2</b> using a REST interface. All of 
+              them used <b>OracleDB</b> and for query handling were used the <b>MyBatis</b> framework. The team for testing API calls used software like 
+              <b>Postman</b>.`
+        },
+        'gm-intern':{
+          [ita]: 'Internship',
+          [eng]: 'Internship'
+        },
+        'gm-intern-period':{
+          [ita]: 'Maggio 2021 - Dicembre 2021',
+          [eng]: 'May 2021- December 2021'
+        },
+        'gm-intern-intro':{
+          [ita]: `In questo periodo ho sia speso tempo in formazione che nella creazione di progetti. L'approccio allo sviluppo della persona in questa fase 
+              è stato vincente e cucito su misura per me, sul concetto del DIY (Do-It-Yourself). Il tutto si basava sul lasciarmi <b>svolgere i compiti in 
+              autonomia</b> dandomi 
+              supporto solo se veramente necessario o se richiesto da me. Questo approccio credo mi abbia spinto verso un processo di <b>responsabilizzazione</b>. 
+              L'essere inserito in un <b>team sinceramente appassionato</b> anche ha avuto un effetto molto positivo sulla mia formazione iniziale.`,
+          [eng]: `During this period, I have spent time both on training and on creating projects. The approach to personal development in this phase has been 
+              successful and tailored to my person, based on the concept of DIY (Do-It-Yourself). It consisted in allowing me to <b>fulfill tasks in autonomy</b>, 
+              providing support only when truly necessary or when requested by me. I believe this approach has pushed me towards a process of <b>taking 
+              responsibility</b>. Being part of a <b>genuinely passionate team</b> has also had a very positive effect on my initial training.`
+        },
+        'gm-intern-technical-description-par-1':{
+          [ita]: `Durante questa fase ho lavorato sia su progetti aventi solo scopo didattico, sia su prove tecniche e dimostrazioni richieste dall'azienda, sia 
+              su codice effettivamente andato in produzione. Tra le varie tecnologie toccate in questo periodo oltre al linguaggio <b>java</b> e al framework 
+              <b>Spring boot</b> cito altri framework come <b>Vaadin</b> e <b>Angular</b>. <b>Database relazionati</b> come <b>MySql</b> e non relazionati come 
+              <b>Mongo</b> ed <b>Elasticsearch</b> insieme all'<b>ELK stack</b> e anche altre tecnologie legate alla messaggistica come <b>ActiveMQ</b> ed altro. 
+              Anche se alcune di queste cose sono state approfondite solo superficialmente, l'espormi a un così ampio ventaglio di tecnologie mi hanno aiutato a 
+              <b>sviluppare un metodo per affrontare le sfide</b> in maniera da arrivare ai risultati prefissati.
+              <br>
+              Di seguito cito alcuni progetti con i quali ho avuto modo di confrontarmi:`,
+          [eng]: `During this phase, I worked on educational purposes projects and demonstrations, and also on code that was actually deployed. Among the various 
+              technologies I worked with during this period, in addition to the <b>Java</b> language and the <b>Spring Boot framework</b>, I also used other 
+              frameworks such as <b>Vaadin</b> and <b>Angular</b>. I worked with both </b>relational databases</b> like <b>MySQL</b> and non-relational databases 
+              like <b>MongoDB</b> and <b>Elasticsearch</b>, along with the <b>ELK stack</b>. I also gained exposure to messaging technologies like <b>ActiveMQ</b> 
+              and others. Although some of these things were only touched upon superficially, being exposed to such a wide range of technologies helped me <b>develop 
+              a method for tackling challenges</b> in a way that leads to the desired results.
+              <br>
+              Here are some projects that I had the opportunity to work on and gain experience with:`
+        },
+        'gm-intern-technical-description-list':{
+          [ita]: `
+              <li>
+                Un Frontend angular. Un progetto in ambito turismo che è stato creato usando come base una altro progetto simile già sviluppato internamente. 
+                Il mio compito, seguito da una riosorsa senior, è stato quello di sviluppare il frontend nei suoi vari aspetti, dallo sviluppo dei componenti 
+                passando per il routing e le chiamate al BE fino allo sviluppo dei vari servizi.
+                <br>
+                Il progetto è stato creato usando <b>Angular 12</b> con framework <b>Ioniq pwa</b>.
+              </li>
+              <li>
+                Un progetto Android basato su realtà aumentata usando la libreria di google <b>ArCore</b>. Mi è stato chiesto di fare delle sperimentazioni su 
+                questa tecnologia. Il progetto è però stato abandonato a causa di alcune difficoltà implementative sia a livello grafico che per l'integrazione 
+                del sensore gps. Abbandono dovuto anche alla mancanza di expertise all'internio del team sulle tecnologie e metodologie usate.
+              </li>
+              <li>
+                Una POC (Proof Of Concept) per espolare la possibilità di creare internamente un nuovo prodotto. Il mio compito era di creare un componente 
+                che andasse ad interfacciarsi con un servizio esterno ed integrarlo nel mio sistema.
+                <br>
+                Le tecnologie usate erano <b>Java 11, Springboot 2, Vaadin 21 e MongoDB</b>.
+              </li>
+              <li>
+                Una <b>immagine docker</b> contenete un server <b>Logstash</b> per la gestione di log provenienti da più fonti. Sono riuscito a configurare questo 
+                server in modo da gestire 3 pipeline in ingresso (gestiva chiamate http e topic e queue gestiti da un server esterno di <b>ActiveMq</b>). In 
+                uscita invece spediva tutto a un server Elasticsearch.
+              </li>
+              <li>
+                Un servizio esterno collegato ad un progetto ambito agroalimentare. Il servizo basato su Java 11, Springboot 2 e Vaadin, dava una interfaccia dove 
+                era possibile gestire dei sensori simulati che generavano dei valori crerati randomicamente o davano la possibilità di inserire dati manualmente. 
+                Questo servizio serviva per simulare un comportamento verosimile che era previsto da un altro servizio non ancora sviluppato.
+              </li>`,
+          [eng]: `
+              <li>
+                An Angular frontend. A tourism related project that was created using another similar project that had already been developed internally as template. 
+                My task, supervised by a senior resource, was to develop the frontend in its various aspects, from component development to routing, 
+                backend calls, and the development of various services.
+                <br>
+                The project was built using <b>Angular 12</b> with the <b>Ionic PWA</b> framework.
+              </li>
+              <li>
+                An Android project based on augmented reality using Google's <b>ARCore</b> library. I was asked to experiment with this technology. However, the 
+                project was abandoned due to implementation difficulties, both in terms of graphics and integrating the GPS sensor. The abandonment was also due to 
+                a lack of expertise within the team regarding the technologies and methodologies used.
+              </li>
+              <li>
+                A POC (Proof of Concept) to explore the possibility of internally creating a new product. My task was to create a component that would interface with an external service and integrate it into my system.
+                <br>
+                The technologies used were <b>Java 11, Spring Boot 2, Vaadin 21, and MongoDB</b>.
+              </li>
+              <li>
+                A <b>Docker image</b> containing a <b>Logstash</b> server for managing logs from multiple sources. I managed to configure this server to handle 
+                three incoming pipelines (handling HTTP calls, topics, and queues managed by an external <b>ActiveMQ</b> server). For outgoing logs, it sent 
+                everything to an Elasticsearch server.
+              </li>
+              <li>
+                An external service connected to an agri-food project. The service, based on Java 11, Spring Boot 2, and Vaadin, provided an interface where 
+                simulated sensors could be managed, generating randomly created values or allowing manual data input. This service was used to simulate a 
+                plausible behavior that was expected from another yet-to-be-developed service.
+              </li>`
+        },
+        'gm-intern-technical-description-par-2':{
+          [ita]: `L'approccio qui adottato basato sull'<b>esplorazione</b>, la <b>curiosità</b> e in generale sul <b>mettersi in gioco</b> insieme alla spinta 
+              di andare a usare una metodologia basata su <b>best practiceces</b> mi hanno sicuramente aiutato a mettere basi solide per poter affrontare ogni 
+              tipo di sfida in ambito professionale.`,
+          [eng]: `The approach adopted here, based on <b>exploration</b>, <b>curiosity</b>, and a willingness to <b>challenge oneself</b>, together with the drive 
+              to use a methodology based on <b>best practices</b>, has certainly helped me lay a solid foundation to tackle any professional challenge.`
         },
       }
     </script>
