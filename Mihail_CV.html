@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mihail 2023</title>
+    <title>Mihail the proactive</title>
     <style>
       
       body {
@@ -543,7 +543,7 @@
     var language;
     var theme;
     var headerVisibility;
-    var headerRealHeight = 0;
+    var headerRealHeight;
   </script>
 
   <body id="body-element">
@@ -554,7 +554,7 @@
             <div style="width: 33%">
               <img id="settings-gear" alt="settings gear" class="settings-gear" onclick="changeHeaderVisibility(event)">
             </div>
-            <h2 id="main-name" style="margin: 0 auto; width: 34%;">MIHAIL PRISACAR</h2>
+            <h2 id="main-name" style="margin: 0 auto; width: 34%;" lang-ref="main-name"></h2>
             <div style="width: 33%;"></div>
           </div>
         </div>
@@ -565,7 +565,7 @@
               <hr id="header-hr" class="header-hr">
               <div class="opened-voices">
                 <ul id="menu-voices" class="menu-voices" style="width: 100%;">
-                  <li class="menu-voice">
+                  <!--li class="menu-voice">
                     <div class="menu-voice-div">
                       <p lang-ref="scroll-speed"></p>
                     </div>
@@ -575,7 +575,7 @@
                         <button id="scroll-button" class="scroll-button menu-clickable" style="border-radius: 5px; max-width: fit-content;" onclick="handleScrollingSpeedChange(event)" lang-ref="scroll-button"></button>
                       </div>
                     </div>
-                  </li>
+                  </li-->
                   <li class="menu-voice">
                     <div class="menu-voice-div">
                       <p lang-ref="language"></p>
@@ -751,9 +751,7 @@
       </div>
 
       <hr id="body-hr-3" class="footer-hr">
-      <div id="gdpr-consent" class="gdpr-consent">
-        I dati personali contenuti in questo curriculum vitae, inclusi i dati di contatto, possono essere utilizzati esclusivamente per la valutazione delle competenze in relazione alla trasmissione del documento stesso, e non possono essere diffusi o trattati per finalità diverse.
-      </div>
+      <div id="gdpr-consent" class="gdpr-consent" lang-ref="gdpr-consent"></div>
 
     </div>   
 
@@ -956,12 +954,12 @@
       function initializePage(){
         scrollingSpeed = 245;
         language = "italian";
-        theme = "html-1";
+        theme = "nesea";
         headerVisibility = 'hidden';
 
         //initialize elements
-        const scrollInput = document.getElementById('scroll-input');
-        scrollInput.value = '';
+        //const scrollInput = document.getElementById('scroll-input');
+        //scrollInput.value = '';
         const languageCombo = document.getElementById('language-combo-box');
         languageCombo.value = 'italian';
         const themeCombo = document.getElementById('theme-combo-box');
@@ -1074,6 +1072,10 @@
       const eng = 'english';
 
       const languageMap = {
+        'main-name' :{
+          [ita]:'MIHAIL PRISACAR',
+          [eng]:'MIHAIL PRISACAR'
+        },
         'scroll-speed':{
           [ita]:'Velocità di scorrimento',
           [eng]:'Scroling speed'
@@ -1505,6 +1507,12 @@
               tipo di sfida in ambito professionale.`,
           [eng]: `The approach adopted here, based on <b>exploration</b>, <b>curiosity</b>, and a willingness to <b>challenge oneself</b>, together with the drive 
               to use a methodology based on <b>best practices</b>, has certainly helped me lay a solid foundation to tackle any professional challenge.`
+        },
+        'gdpr-consent':{
+          [ita]: `I dati personali contenuti in questo curriculum vitae, inclusi i dati di contatto, possono essere utilizzati esclusivamente per la valutazione 
+              delle competenze in relazione alla trasmissione del documento stesso, e non possono essere diffusi o trattati per finalità diverse`,
+          [eng]: `The personal data contained in this curriculum vitae, including contact information, may only be used for the evaluation of skills in relation 
+              to the transmission of the document and cannot be disclosed or processed for other purposes`
         },
       }
     </script>
