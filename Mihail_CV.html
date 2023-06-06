@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mihail the proactive</title>
+    <title>Mihail the Proactive</title>
     <style>
       
       body {
@@ -867,6 +867,21 @@
         colorizeHeaders();
         assignThemeClasses();
         setLogo();
+        resizeDescriptions();
+      }
+
+      function resizeDescriptions(){
+        const resizers = document.querySelectorAll(
+          `[lang-ref="plus-general-info"], 
+          [lang-ref="minus-general-info"], 
+          [lang-ref="plus-technical-info"], 
+          [lang-ref="minus-technical-info"]`);
+        resizers.forEach(resizer => {
+          let description = resizer.previousElementSibling;
+          if(description.style.maxHeight != ''
+          &&
+          (description.style.maxHeight != '0' || description.style.maxHeight != '0px')) description.style.maxHeight = description.scrollHeight + "px";
+        });
       }
 
       function colorizeHeaders(){
@@ -981,6 +996,7 @@
           elem.innerHTML  = languageMap[elem.getAttribute('lang-ref')][language];
         });
         calculateScrollHeight();
+        resizeDescriptions();
       }
     </script>
 
@@ -1161,7 +1177,7 @@
           but I'm also developing skills in other software fields in order to build an all around view.<br><br>
           Thanks to being in a stimulating environment and to my willingness to tackle new challenges, I have been able to develop also important soft skills, 
           including 
-          <b>adaptability</b>, <b>problem solving</b> ank skills related to the <b>interpersonal</b> field required for being able to interact successfully with 
+          <b>adaptability</b>, <b>problem solving</b> and skills related to the <b>interpersonal</b> field required for being able to interact successfully with 
           other professionals with different background and competencies.<br><br>My ambition is to continue improving and advancing my career in software development, 
           aiming to create increasingly robust and well-structured products that provide added value. 
           <br>`
@@ -1202,7 +1218,7 @@
         'personal-projects-euler-general-description':{
           [ita]: `Soluzioni progetto euler: il progetto euler è un sito Internet che raccoglie problemi per lo più di tipo matematico particolarmente proni ad essere 
               risolti mediante l'implementazione di script o programmi. Risolvendo alcuni dei problemi da loro proposti ho comiciato effettivamente a 
-              mettere in pratica le competenze in ambito di programmazione che avevo acquisito fino ad allora. Facendo ciò ho imparato l'importanza del <b>ragionamento logico</b>, esistenza di varie <b>Strutture dati</b> e dei vari <b>paradigmi di programmazione</b> usati nel mondo java.`,
+              mettere in pratica le competenze in ambito di programmazione che avevo acquisito fino ad allora. Facendo ciò ho imparato l'importanza del <b>ragionamento logico</b>, l'esistenza delle varie <b>Strutture dati</b> e dei vari <b>paradigmi di programmazione</b> usati nel mondo java.`,
           [eng]: `Project euler solutions: the Euler Project is a website that collects mostly mathematical problems that are particularly suitable for being 
               solved through the implementation of scripts or programs. By solving some of the problems they propose, I have actually started putting into 
               practice the programming skills I had acquired up to that point. In doing so, I have learned the importance of <b>logical reasoning</b>, the existence 
@@ -1235,14 +1251,14 @@
               maintained over time, allowing me to develop a comprehensive and <b>versatile</b> skill set to tackle any work challenge effectively. To achieve this, 
               I decided to create a project with a series of bots that perform various functionalities and can be interacted with through a text-based chat to 
               execute specific commands. To accomplish this project, I had to face various challenges, starting from the <b>analysis</b> and <b>ideation phase</b>, 
-              followed by the selection of <b>architecture</b> and technologies to use, managing failures that inevitably arise from making occasional wrong 
+              followed by the selection of <b>architecture</b> and technologies to use, <b>managing failures</b> that inevitably arise from making occasional wrong 
               choices, and adapting to changes during the development process. Another significant challenge was <b>deploying the project</b>, conducting 
               <b>maintenance</b>, and making <b>bug fixing</b>. Realizing all this required a <b>comprehensive vision</b> and the ability to <b>tackle unexpected problems</b> while considering specific limitations and requirements.<br><br>To be more specific, the current project consists of 2 bots:`
         },
         'personal-projects-bots-general-description-list':{
           [ita]: `<li>Un 'master bot' che gestisce e monitora il server di produzione e le istanze di eventuali altri bot configurati sul server per 
               ottimizzare l'uso di risorse del sistema</li>
-              <li>Un bot che raccoglie e persiste dati su un db in base ai comandi che riceve e ritorna i dati inseriti o report che vengono generate in base ai 
+              <li>Un bot che raccoglie e persiste dati su un db in base ai comandi che riceve e ritorna i dati inseriti o report che vengono generati in base ai 
               dati collezionati</li>`,
           [eng]: `<li>A 'master bot' that manages and monitors the production server and instances of any other bots configured on the server to optimize system 
               resource utilization.</li>
@@ -1295,8 +1311,8 @@
               direttamente, i messaggi diretti verso gli altri bot vengono messi in coda e spediti uno per volta ai vari altri bot tramite delle <b>chiamate REST</b>, 
               poi spedisce al mittente i messaggi che riceve nelle risposte ricevute dagli altri servizi che gestiscono le logiche specifiche dietro gli altri bot. 
               L'unico altro bot fino ad ora registrato si occupa di persistere campi specifici su un db e rispondere con i dati salvati o con report basati su tali 
-              dati. Questo bot è costruito usando il framework <b>Spring boot 3</b> e usa un db relazionato (<b>H2 DB</b>) con <JPA + Hibernate</b>. In particolare 
-              nella creazione del secondo bot ho cercato di basare il suo sviluppo su metodologia che segue i principi <b>SOLID</b> che stavo studiando in quel 
+              dati. Questo bot è costruito usando il framework <b>Spring boot 3</b> e usa un db relazionato (<b>H2 DB</b>) con <b>JPA + Hibernate</b>. Nella 
+              creazione di questi bot ho cercato di basare il loro sviluppo su metodologia che segue i principi <b>SOLID</b> che stavo studiando in quel 
               periodo.`,
           [eng]: `The project of the bots, consists, as previously mentioned, of two different bots. 
               Both bots use <b>Java 17</b> and employ a <b>string pattern recognition logic</b> to recognize the commands they receive. Essentially, 
@@ -1304,7 +1320,7 @@
               Maven and its task is to register all the bots that need to be deployed on the hosting server. Direct commands to the Master bot are executed immediately, while messages directed to the other bots are queued and sent one by one to the respective bots through <b>REST calls</b>. The Master 
               bot then sends the messages received in the responses from the other services that handle the specific logic behind the other bots back to the sender. 
               So far, only one other bot has been registered, which is responsible for persisting specific fields in a database and responding with the saved data or reports based on that data. This bot is built using the <b>Spring Boot 3</b> framework and uses a relational database (<b>H2 DB</b>) that is accessed by 
-              <JPA + Hibernate</b>. In particular, during the creation of the second bot, I aimed to base its development on a methodology that follows the 
+              <b>JPA + Hibernate</b>. During the creation of these bots, I aimed to base their development on a methodology that follows the 
               <b>SOLID</b> principles, which I was studying at that time.`
         },
         'nesea-experience':{
@@ -1334,7 +1350,7 @@
               ho anche avuto modo di capire il contesto nel quale mi trovavo e di creare <b>legami con i componenti del team</b>. 
               Attualmente invece lavoro in consulenza presso un cliente che gestisce commesse da parte di una delle più imporatanti realtà bancarie 
               nazionali, Intesa San Paolo. Nei periodi tra un'attività e l'altra ho avuto modo di dedicare tempo alla formazione seguendo sia materiale fornito 
-              dall'azienda sia avendo libertà di <b>gestire personalmente il mio percorso di crescita</b>. Oltre ad approfondire tematiche tecniche NESEA ha puntato 
+              dall'azienda sia avendo libertà di <b>gestire personalmente il mio percorso di crescita</b>. Oltre ad approfondire tematiche tecniche, NESEA ha puntato 
               molto anche sullo sviluppo di <b>soft skills</b> per uno sviluppo più ampio sia per quanto riguarda la crescita personale che per quanto riguarda 
               aspetti <b>interpersonali</b>.`,
           [eng]: `In NESEA I started my journey within internally managed projects. In this period, in addition to being able to demonstrate my skills, I also had 
@@ -1344,10 +1360,10 @@
               path</b>. In addition to delving into technical topics, NESEA also focuses heavily on <b>soft skills</b> for a broader development, both in terms of personal growth and <b>interpersonal</b> aspects.`
         },
         'nesea-experience-technical-description':{
-          [ita]: `I progetti sui quali sono stato coinvolti internamente sono stati uno in ambito delle fatturazioni elettroniche, nel quale veniva richiesto di 
+          [ita]: `I progetti sui quali sono stato coinvolto internamente sono stati uno in ambito delle fatturazioni elettroniche, nel quale veniva richiesto di 
               <b>implementare evolutive</b>, il progetto era basato su java 8 con framework spring ed una archittetura multimodulo. Il secondo progetto, in 
               ambito pubblica amministrazione consisteva nel migrare una parte di un progetto scritto in java 6 in usando gli <b>EJB</b> in due più moderni 
-              microservizi springboot basati su java 8, uno con una interfaccia <b>SOAP</b> e una di tipo <b>REST</b>.
+              microservizi springboot basati su java 8, uno con una interfaccia <b>SOAP</b> e uno con interfaccia <b>REST</b>.
               <br>
               Per quanto riguarda la parte in consulenza, ho lavorato su progetti dove Intesa San Paolo rappresenta il cliente committente del software. In 
               questo caso ho lavorato su due progetti uno in contesto <b>Spring Batch</b> e uno di tipo rest basato su springboot. Per entrambi i progetti 
@@ -1367,11 +1383,11 @@
               <br>
               Regarding the consultancy work, I have worked on projects where Intesa San Paolo is the client commissioning the software. In that case, I worked on 
               two projects: one in the context of <b>Spring Batch</b> and another REST-based project using Spring Boot. Both projects utilized an internal 
-              framework based on the mentioned Spring frameworks. It have been adopted <b>MongoDB</b>. 
+              framework based on the mentioned Spring frameworks. It have been adopted <b>MongoDB</b> for the persisting layer. 
               In particular, the second project placed great emphasis on the quality of work. It required 
               achieving certain minimum scores certified by <b>SonarQube</b> scans, using also <b>code review</b> approach to obtain better results. In this 
               project I was also able to achieve a code coverage of over 90% in testing, utilizing both <b>unit testing</b> and <b>integration testing</b>. 
-              The project concluded with the <b>creation of technical documentation</b> using internal templates For documenting rest APIs was also used 
+              The project concluded with the <b>creation of technical documentation</b> using internal templates. For documenting rest APIs was also used 
               <b>Swagger</b>.
               <br>
               In terms of training, significant emphasis was placed on <b>microservices architecture</b> and specific technologies, such as <b>Resilience4j</b>, 
@@ -1394,12 +1410,12 @@
               serie di servizi implementati usando le stesse tecnologie. Per l'implementazione di questi servizi venivo seguito da una risorsa senior, la quale 
               mi lasciava molta <b>autonomia</b> facendomi sviluppare tutte le parti richieste dal progetto.
               <br><br>
-              Tutti i progetti riguardavano solo la parte di <b>Back End</b> venivano sviluppati usando java 11 e <b>Spring Boot 2</b> con interfaccia REST. 
+              Tutti i progetti riguardavano solo la parte di <b>Back End</b> e sono stati sviluppati usando java 11 e <b>Spring Boot 2</b> con interfaccia REST. 
               Si basavano su DB relazionati di tipo <b>OracleDB</b> e per la gestione delle query veniva usato il framework <b>MyBatis</b>. Internamente per 
               testare le chiamate veniva usato molto <b>Postman</b>.`,
           [eng]: `Experience with GM spent working as <b>external consultant</b> on national health system related projects. The projescts consists in several 
               services developed using standardized technologies. For the implementation of these services I was followed by a senion resource, who gave me 
-              <b>autonomy</b> in implementing all required parts required by project.
+              <b>autonomy</b> in implementing all required parts by the projects.
               <br><br>
               All the projects were focused only on the <b>Back End</b> and were built using java 11 and <b>Spring Boot 2</b> using a REST interface. All of 
               them used <b>OracleDB</b> and for query handling were used the <b>MyBatis</b> framework. The team for testing API calls used software like 
@@ -1503,7 +1519,7 @@
         },
         'gm-intern-technical-description-par-2':{
           [ita]: `L'approccio qui adottato basato sull'<b>esplorazione</b>, la <b>curiosità</b> e in generale sul <b>mettersi in gioco</b> insieme alla spinta 
-              di andare a usare una metodologia basata su <b>best practiceces</b> mi hanno sicuramente aiutato a mettere basi solide per poter affrontare ogni 
+              di andare a usare una metodologia basata su <b>best practices</b> mi hanno sicuramente aiutato a mettere basi solide per poter affrontare ogni 
               tipo di sfida in ambito professionale.`,
           [eng]: `The approach adopted here, based on <b>exploration</b>, <b>curiosity</b>, and a willingness to <b>challenge oneself</b>, together with the drive 
               to use a methodology based on <b>best practices</b>, has certainly helped me lay a solid foundation to tackle any professional challenge.`
